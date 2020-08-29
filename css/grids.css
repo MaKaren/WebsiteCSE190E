@@ -1,9 +1,12 @@
 /*
-    @Author Karen Ma
-    CSE190E
-    Aug. 27 2020
-    Project 1:
+    Name: Karen Ma
+    Date: 08.27.20
+    Section: CSE 190e
+    This is the grids.css page for my portfolio of web development
+    work. It is used by all pages in my portfolio to allow griding to evenly
+    space content whenever I need it. 
 */
+
 
 /* Grid for <section> */
 .grid-container {
