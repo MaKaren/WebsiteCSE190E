@@ -1,5 +1,178 @@
 /*
     @Author Karen Ma
-    08/27/2020
+    CSE190E
+    Aug. 27 2020
+    Project 1:
 */
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: rgba(245, 208, 106, 0.849);
+    /* font-family: 'Andale Mono MT Std Regular', monospace; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    min-height: calc(100vh - 70px);
+}
 
+.home-page {
+    background: url(../pictures/Home_Page/background.jpeg) no-repeat center;
+    background-size: cover;
+}
+
+.work-page {
+    background: url(../pictures/Work_page/background.jpeg) no-repeat center;
+    background-size: cover;
+}
+
+.achieve-page {
+    background: url(../pictures/Achieve_Page/background.jpeg) no-repeat center;
+    background-size: cover;
+}
+
+.hobbies-page {
+    background: url(../pictures/Hobbies_page/background.jpeg) no-repeat center;
+    background-size: cover;
+}
+
+.contact-page {
+    background: url(../pictures/Contact_Page/background.jpeg) no-repeat center;
+    background-size: cover;
+}
+
+/* Header */
+header {
+    position: sticky; /* Stickys to the top even when scrolling */
+    display: block;
+    overflow: hidden;
+    width: 1fr; height: 50px;
+    background-color: rgb(245, 208, 106);
+}
+
+/* Navigation Bar */
+.navbar {
+    position: relative;
+    left: 20%;
+}
+
+/* <a> active page has white bg */
+.navbar a.active {
+    background-color: white;
+}
+
+.navbar > a {
+    text-align: center;
+    text-decoration: none;
+    padding: 50px calc(80%/20) 50px calc(80%/20);
+}
+
+/* Highlight the <a> link if hovered on */
+.navbar > a:hover {
+    background-color: white;
+}
+
+/* Main */
+main {
+    margin: 0 auto -50px;
+}
+
+main > section {
+    position: relative;
+    display: block;
+    height: auto; min-height: 100%;
+    /* left: 8%; */
+}
+
+/* Grid for <section> */
+.grid-container {
+    height: calc(100% - 100px); /* Subtract the 50px from header and footer */
+    display: grid;
+    grid-template-columns: 20% 80%; /* Column ratio*/
+    grid-template-rows: auto; 
+    grid-template-areas: /* Seperate the page into two columns */
+        "one two";
+}
+
+/* <section> to the left */
+main > .content-one{
+    grid: one;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto; /* Allows scrolling if there's too much on page */
+}
+
+/* <section> to the right */
+main > .content-two{
+    grid-area: two;
+    background-color: white;
+    overflow: auto; /* Allows scrolling if there's too much on page */
+}
+/* Section Content */
+section> div> h1 {
+    position: relative; padding: 0% 10% 0% 10%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px; text-align: center;
+    letter-spacing: 3px; text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+h2 {
+    font-family: 'Andale Mono MT Std Regular', monospace;
+    padding: 5% 5% 0% 5%;
+}
+
+p {
+    padding: 0% 5% 0% 5%;
+}
+
+ul {
+    padding: 0% 5% 0% 10%;
+}
+
+
+section > div > p, h2 {
+    position: relative; 
+    text-align: left;
+    top: calc((100% - 100px) - 50%);
+}
+
+.pdf{
+    height: 100%;
+}
+
+section > div > embed {
+    position: relative;
+    display: block;
+    left: 10%; width: 80%; height: 100%;
+}
+
+/* Home-page Content */
+.home-page > main > section > div > img {
+    position: relative;
+    left: 10%; width: 80%; height: 80%;
+    border: solid; border-color: lightyellow; 
+    border-top-right-radius: 10%;
+}
+
+.home-page > main > section > div > p > a { /* I need to do this so the code doesn't over lap with the <a> in the navbar */
+    padding: 3px;
+    border: solid; border-color: rgb(245, 208, 106); 
+    border-width: 2px; border-radius: 10%;
+    background-color: rgb(245, 208, 106);
+    text-decoration: none;
+}
+
+.home-page > main > section > div > p > a:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+/* Footer */
+.breaker {
+    display: block;
+    height: 50px;
+}
+
+footer {
+    position: fixed;
+    overflow: hidden;
+    bottom: 0;
+    width: 100%; height: 50px;
+    background-color: rgb(245, 208, 106);
+}

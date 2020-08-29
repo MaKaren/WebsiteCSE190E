@@ -1,4 +1,6 @@
 /*
     @Author Karen Ma
-    08/27/2020
+    CSE190E
+    Aug. 27 2020
+    Project 1:
 */
