@@ -26,13 +26,13 @@ header {
 }
 
 .logo {
-    position: relative; float: left;
-    top: 5px; left:5px;
+    position: relative; float: right;
+    top: 5px; right: 20px;
     width: 55px; height:55px;
 }
 
 /* Navigation Bar */
-.navbar { position: relative; left: calc(20% - 55px); }
+.navbar { position: relative; left: 0; }
 
 /* <a> active page has white bg */
 .navbar a.active { background-color: white; }
@@ -40,7 +40,7 @@ header {
 .navbar > a {
     top: 20px; position: relative;
     text-align: center; text-decoration: none;
-    padding: 20px calc(80%/20) 65px calc(80%/20);
+    padding: 25px calc(60%/24) 70px calc(60%/24);
 }
 
 /* Highlight the <a> link if hovered on */
@@ -55,11 +55,21 @@ main > section {
 }
 
 /* Section Content - Formmating */
-section> div> h1 {
+.home-page > main > section> div> h1 {
     position: relative; padding: 0% 10% 0% 10%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 30px; text-align: center;
-    letter-spacing: 3px; text-align: center;
+    font-size: 30px; text-align: center; letter-spacing: 3px;
+    color: rgb(255, 255, 255);
+}
+
+.work-page > main > section> div> h1,
+.achieve-page > main > section> div> h1,
+.hobbies-page > main > section> div> h1,
+.contact-page > main > section> div> h1 {
+    position: relative; padding: 5% 5% 0% 5%; 
+    top: 250px; transform: rotate(90deg);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px; text-align: center; letter-spacing: 3px;
     color: rgb(255, 255, 255);
 }
 
