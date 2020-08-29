@@ -31,49 +31,39 @@ main > .content-two{
 
 
 /* Achieve-page/Resume-page/Hobbies Content */
-.achieve-page > main > section > .sub-grid-container {
-    position: relative;
-    display: grid;
+.four-img-grid > main > section > .sub-grid-container > div {
+    position: relative; display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: auto;
     grid-template-areas:
-        "textwords textwords textwords textwords"
-        "picture picture2 picture3 picture4";
+        "picture picture2 picture3 picture4"
+        "textwords textwords textwords textwords";
 }
 
-.sub-grid-1 {
-    grid-area: textwords;
-}
+.sub-grid-1 { grid-area: textwords; }
+.sub-grid-2 { grid-area: picture; }
+.sub-grid-3 { grid-area: picture2; }
+.sub-grid-4 { grid-area: picture3; }
+.sub-grid-5 { grid-area: picture4; }
+.sub-grid-2, .sub-grid-3, .sub-grid-4, .sub-grid-5 { padding: 0px 0px 0px 0px; }
 
-.sub-grid-2 {
-    grid-area: picture;
-}
-
-.sub-grid-3 {
-    grid-area: picture2;
-}
-
-.sub-grid-4 {
-    grid-area: picture3;
-}
-
-.sub-grid-5 {
-    grid-area: picture4;
-}
-
-.sub-grid-2 > img, .sub-grid-3 > img, .sub-grid-4 > img , .sub-grid-5 > img  {
-    position: relative;
-    display: block;
+.four-img-grid > main > section > div > div > .sub-grid-2 > img, 
+.four-img-grid > main > section > div > div > .sub-grid-3 > img, 
+.four-img-grid > main > section > div > div > .sub-grid-4 > img , 
+.four-img-grid > main > section > div > div > .sub-grid-5 > img  {
+    position: relative; display: block;
     margin-left: auto; margin-right: auto;
     width: 275px; height: 275px;
     border: none; border-radius: 10%;
 }
 
-.sub-grid-2 > .caption, .sub-grid-3 > .caption, .sub-grid-4 > .caption, .sub-grid-5 > .caption {
+.four-img-grid > main > section > div > div > .sub-grid-2 > .caption, 
+.four-img-grid > main > section > div > div > .sub-grid-3 > .caption, 
+.four-img-grid > main > section > div > div > .sub-grid-4 > .caption, 
+.four-img-grid > main > section > div > div > .sub-grid-5 > .caption {
     width: 50%;
     padding: 0px 25% 0px 25%;
-    font-size: 10px;
-    text-align: left;
+    font-size: 10px; text-align: left;
     color: rgb(39, 39, 39);
 }
 
@@ -81,3 +71,8 @@ main > .content-two{
     text-align: left;
     color: rgb(39, 39, 39);
 }
+
+#uwstemsub, #CHS-tennis { padding: 2% 0 5% 0; }
+
+.light-gray-bg { background-color: rgb(224, 224, 224); }
+.light-gray-bg, .white-bg { padding: 5% 0 5% 0; }
