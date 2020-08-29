@@ -1,9 +1,12 @@
 /*
-    @Author Karen Ma
-    CSE190E
-    Aug. 27 2020
-    Project 1:
+    Name: Karen Ma
+    Date: 08.27.20
+    Section: CSE 190e
+    This is the index.css page for my portfolio of web development
+    work. It is used by all pages in my portfolio to give the site
+    a consistent look and feel. 
 */
+
 
 html, body {
     margin: 0; height: 100%; min-height: calc(100vh - 70px);
@@ -117,7 +120,7 @@ section > div > embed {
 
 footer {
     position: fixed; overflow: hidden;
-    bottom: 0;
-    width: 100%; height: 50px;
+    bottom: 0; width: 100%; height: 50px;
+    text-align: center;
     background-color: rgb(252, 231, 173);
 }
