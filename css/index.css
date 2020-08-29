@@ -4,11 +4,13 @@
     Aug. 27 2020
     Project 1:
 */
+
 html, body {
     height: 100%;
     margin: 0;
     background-color: rgba(245, 208, 106, 0.849);
     /* font-family: 'Andale Mono MT Std Regular', monospace; */
+    color: rgb(24, 24, 24);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     min-height: calc(100vh - 70px);
 }
@@ -81,30 +83,7 @@ main > section {
     /* left: 8%; */
 }
 
-/* Grid for <section> */
-.grid-container {
-    height: calc(100% - 100px); /* Subtract the 50px from header and footer */
-    display: grid;
-    grid-template-columns: 20% 80%; /* Column ratio*/
-    grid-template-rows: auto; 
-    grid-template-areas: /* Seperate the page into two columns */
-        "one two";
-}
-
-/* <section> to the left */
-main > .content-one{
-    grid: one;
-    background-color: rgba(0, 0, 0, 0.5);
-    overflow: auto; /* Allows scrolling if there's too much on page */
-}
-
-/* <section> to the right */
-main > .content-two{
-    grid-area: two;
-    background-color: white;
-    overflow: auto; /* Allows scrolling if there's too much on page */
-}
-/* Section Content */
+/* Section Content - Formmating */
 section> div> h1 {
     position: relative; padding: 0% 10% 0% 10%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -113,21 +92,24 @@ section> div> h1 {
     color: rgb(255, 255, 255);
 }
 
+/* Section Content - Formmating */
 h2 {
     font-family: 'Andale Mono MT Std Regular', monospace;
     padding: 5% 5% 0% 5%;
 }
 
+/* Section Content - Formmating */
 p {
     padding: 0% 5% 0% 5%;
 }
 
+/* Section Content - Formmating */
 ul {
     padding: 0% 5% 0% 10%;
 }
 
-
-section > div > p, h2 {
+/* Section Content - Formmating */
+section > div > p {
     position: relative; 
     text-align: left;
     top: calc((100% - 100px) - 50%);
