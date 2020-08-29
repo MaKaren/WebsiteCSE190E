@@ -72,8 +72,11 @@ main > section {
 .achieve-page > main > section> div> h1,
 .hobbies-page > main > section> div> h1,
 .contact-page > main > section> div> h1 {
-    padding: 5% 5% 0% 5%; 
+    position: relative; padding: 5% 5% 0% 5%; 
     top: 250px; transform: rotate(90deg);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px; text-align: center; letter-spacing: 3px;
+    color: rgb(255, 255, 255);
 }
 
 /* Section Content - Formmating */
