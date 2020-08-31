@@ -24,9 +24,7 @@
     grid-template-columns: 40% 60%; /* Column ratio */ 
 }
 
-.home-page > main > .content-one {
-    background-color: rgba(255, 255, 255, 0); 
-}
+.home-page > main > .content-one { background-color: rgba(255, 255, 255, 0); }
 
 /* <section> to the left */
 main > .content-one{
@@ -38,7 +36,6 @@ main > .content-one{
 /* <section> to the right */
 main > .content-two{
     grid-area: two;
-    /* background-color: white; */
     overflow: auto; /* Allows scrolling if there's too much on page */
 }
 
