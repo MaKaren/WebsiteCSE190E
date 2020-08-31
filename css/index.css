@@ -42,8 +42,8 @@ header {
 
 /* Navigation Bar */
 .navbar { position: relative; left: 0; top:0; }
-#home { background-color: darksalmon; }
-#home { color: rgb(255, 255, 255); }
+#home { background-color: darksalmon; color: rgb(255, 255, 255);}
+#home:hover { background-color: rgb(218, 178, 164); }
 
 /* <a> HTML element with the class 'active' has white bg */
 .navbar a.active { background-color: white; }
@@ -58,7 +58,7 @@ header {
 }
 
 /* Highlight the <a> link if hovered on */
-.navbar > a:hover { background-color: white }
+.navbar > a:hover { background-color: rgba(255, 255, 255, 0.60) }
 
 /* Main */
 main { margin: 0 auto -50px; }
