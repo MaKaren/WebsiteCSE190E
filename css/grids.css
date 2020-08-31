@@ -15,7 +15,7 @@
     grid-template-columns: 100%; /* Column ratio*/
     grid-template-rows: auto; 
     grid-template-areas: /* Seperate the page into two columns */
-        "two one";
+        "one two";
 }
 
 /* index.html only */
