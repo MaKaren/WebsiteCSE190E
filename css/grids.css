@@ -15,26 +15,27 @@
     grid-template-columns: 100%; /* Column ratio*/
     grid-template-rows: auto; 
     grid-template-areas: /* Seperate the page into two columns */
-        "two one";
+        "one two";
 }
 
 /* index.html only */
 .home-page > .grid-container { 
     background-color: rgba(0, 0, 0, 0.5); 
-    grid-template-columns: 60% 40%; /* Column ratio */ 
+    grid-template-columns: 40% 60%; /* Column ratio */ 
 }
+
+.home-page > main > .content-one { background-color: rgba(255, 255, 255, 0); }
 
 /* <section> to the left */
 main > .content-one{
     grid: one;
-    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-color: white;
     overflow: auto; /* Allows scrolling if there's too much on page */
 }
 
 /* <section> to the right */
 main > .content-two{
     grid-area: two;
-    background-color: white;
     overflow: auto; /* Allows scrolling if there's too much on page */
 }
 
@@ -79,7 +80,7 @@ main > .content-two{
     color: rgb(39, 39, 39);
 }
 
-.sub-grid-1 > .time-period { text-align: left; color: rgb(39, 39, 39); }
+.time-period { text-align: left; color: rgb(39, 39, 39); font-size: 14px; font-weight: lighter;}
 
 /* ID spacing */
 #uwstemsub { padding: 1% 0 5% 0; }
