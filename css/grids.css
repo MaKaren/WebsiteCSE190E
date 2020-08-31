@@ -15,13 +15,13 @@
     grid-template-columns: 100%; /* Column ratio*/
     grid-template-rows: auto; 
     grid-template-areas: /* Seperate the page into two columns */
-        "one two";
+        "two one";
 }
 
 /* index.html only */
 .home-page > .grid-container { 
     background-color: rgba(0, 0, 0, 0.5); 
-    grid-template-columns: 40% 60%; /* Column ratio */ 
+    grid-template-columns: 60% 40%; /* Column ratio */ 
 }
 
 /* <section> to the left */

@@ -35,13 +35,13 @@ header {
 
 /* Logo image */
 .logo {
-    position: relative; float: left;
-    top: 5px; left: 10px;
+    position: relative; float: right;
+    top: 5px; right: 10px;
     width: 55px; height:55px;
 }
 
 /* Navigation Bar */
-.navbar { position: relative; left: calc(40% - 55px); top:0; }
+.navbar { position: relative; left: 0; top:0; }
 #home { background-color: darksalmon; color: rgb(255, 255, 255);}
 #home:hover { background-color: rgb(218, 178, 164); }
 
