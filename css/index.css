@@ -10,17 +10,16 @@
 
 html, body {
     margin: 0; 
-    /* height: 100vh;  */
+    /* height: 100%;  */
     background-color: rgba(245, 208, 106, 0.849); color: rgb(24, 24, 24);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /* background image of each page */
 .home-page { background: url(../pictures/Home_Page/background.jpeg) no-repeat center; background-size: cover; }
-/* .work-page { background: url(../pictures/Work_page/background.jpeg) no-repeat center; background-size: cover; }
-.achieve-page { background: url(../pictures/Achieve_Page/background.jpeg) no-repeat center; background-size: cover; }
-.hobbies-page { background: url(../pictures/Hobbies_page/background.jpeg) no-repeat center; background-size: cover; }
 .contact-page { background: url(../pictures/Contact_Page/background.jpeg) no-repeat center; background-size: cover; }
+/* .achieve-page { background: url(../pictures/Achieve_Page/background.jpeg) no-repeat center; background-size: cover; }
+.hobbies-page { background: url(../pictures/Hobbies_page/background.jpeg) no-repeat center; background-size: cover; }
 .work-page, .achieve-page, .hobbies-page, .contact-page { background-color: darksalmon; } */
 
 
@@ -69,7 +68,7 @@ main > section {
     height: 100%; min-height: 100%;
 }
 
-main > section> div> h1 {
+main > section > div> h1 {
     position: relative; padding: 0% 10% 0% 10%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 30px; text-align: center; letter-spacing: 3px;
@@ -77,10 +76,8 @@ main > section> div> h1 {
 }
 
 /* Custom for certain pages because of <section> to the right */
-.work-page > main > section> div> h1,
 .achieve-page > main > section> div > h1,
-.hobbies-page > main > section> div > h1,
-.contact-page > main > section> div > h1 {
+.hobbies-page > main > section> div > h1 {
     top: 250px; transform: rotate(90deg);
 }
 
@@ -93,7 +90,7 @@ p { padding: 0% 5% 0% 5%; }
 /* Section Content - Formmating */
 ul { padding: 0% 5% 0% 10%; }
 
-li { padding: 0% 0% 2% 0%}
+li { padding: 0% 0% 1% 0%}
 
 /* Section Content - Formmating */
 section > div > p {
@@ -102,12 +99,12 @@ section > div > p {
 }
 
 /* pdf viewable size */
-.pdf{ height: 1200px; padding: 0 0 5% 0; }
+.pdf{ height: 700px; padding: 5% 0 2% 0; }
 
 /* embed viewable size */
 section > div > embed {
     position: relative; display: block;
-    left: 10%; width: 80%; height: 100%;
+    left: 5%; width: 90%; height: 100%;
 }
 
 /* Home-page Content */
@@ -119,7 +116,7 @@ section > div > embed {
 }
 
 /* I need to do this so the code doesn't over lap with the <a> in the navbar */
-.home-page > main > section > div > p > span > a { 
+.home-page > main > section > article > p > span > a { 
     padding: 3px; text-decoration: none;
     background-color: rgb(245, 208, 106);
     border: solid; border-color: rgb(245, 208, 106); 
@@ -127,10 +124,25 @@ section > div > embed {
 }
 
 /* Hover for the link to Lois Lowry's offical page */
-.home-page > main > section > div > p > span > a:hover { background-color: rgb(255, 255, 255); }
+.home-page > main > section > article > p > span > a:hover { background-color: rgb(255, 255, 255); }
+
+.contact-img { 
+    padding: 3% 5% 3% 5%;
+}
+
+.contact-img > a > img{ 
+    padding: 0% 3% 0% 3%;
+    width: 75px; height: 75px;
+}
 
 /* div breaker to let some padding between <section> and <footer> */
 .breaker { display: block; height: 50px; }
+
+.tennis-ball { 
+    position: relative;
+    top: 10px; right: 10px;
+    width:30px; height:30px; 
+}
 
 /* Footer */
 footer {
@@ -138,4 +150,9 @@ footer {
     width: 100%; height: 50px; 
     text-align: center;
     background-color: rgb(252, 231, 173);
+}
+
+footer > p {
+    position: relative;
+    bottom: 15px;
 }

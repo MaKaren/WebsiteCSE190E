@@ -19,26 +19,42 @@
 }
 
 /* index.html only */
-.home-page > .grid-container { 
+.home-page > .grid-container,
+.contact-page > .grid-container,
+.work-page > .grid-container { 
     background-color: rgba(0, 0, 0, 0.5); 
     grid-template-columns: 40% 60%; /* Column ratio */ 
 }
 
-.home-page > main > .content-one { background-color: rgba(255, 255, 255, 0); }
+/* Formatting background color of specific pages */
+.home-page > main > .content-one,
+.contact-page > main > .content-one { background-color: rgba(255, 255, 255, 0); }
+.work-page > main > .content-one { background-color: rgb(133, 133, 133); }
 
 /* <section> to the left */
 main > .content-one{
     grid: one;
     background-color: white;
-    overflow: auto; /* Allows scrolling if there's too much on page */
+    /* Allows scrolling if there's too much on page */
+    overflow: auto; 
 }
 
 /* <section> to the right */
 main > .content-two{
     grid-area: two;
-    overflow: auto; /* Allows scrolling if there's too much on page */
+    /* Allows scrolling if there's too much on page */
+    overflow: auto; 
 }
 
+/* Achieve-page/Resume-page/Hobbies Content */
+.three-img-grid > main > section > .sub-grid-container {
+    position: relative; display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "picture picture2 picture3 "
+        "textwords textwords textwords";
+}
 
 /* Achieve-page/Resume-page/Hobbies Content */
 .four-img-grid > main > section > .sub-grid-container {
@@ -60,30 +76,50 @@ main > .content-two{
 
 
 /* <figure> */
-.four-img-grid > main > section > div > .sub-grid-2 > figure > img, 
-.four-img-grid > main > section > div > .sub-grid-3 > figure > img, 
-.four-img-grid > main > section > div > .sub-grid-4 > figure > img , 
-.four-img-grid > main > section > div > .sub-grid-5 > figure > img  {
+.four-img-grid > main > section > article > .sub-grid-2 > figure > img, 
+.four-img-grid > main > section > article > .sub-grid-3 > figure > img, 
+.four-img-grid > main > section > article > .sub-grid-4 > figure > img, 
+.four-img-grid > main > section > article > .sub-grid-5 > figure > img,
+.three-img-grid > main > section > article > .sub-grid-2 > figure > a > img, 
+.three-img-grid > main > section > article > .sub-grid-3 > figure > a > img, 
+.three-img-grid > main > section > article > .sub-grid-4 > figure > a > img, 
+.three-img-grid > main > section > article > .sub-grid-5 > figure > a > img  {
     position: relative; display: block;
     margin-left: auto; margin-right: auto;
     width: 275px; height: 275px;
     border: none; border-radius: 10%;
 }
 
+.three-img-grid > main > section > article > .sub-grid-2 > figure > a > img, 
+.three-img-grid > main > section > article > .sub-grid-3 > figure > a > img, 
+.three-img-grid > main > section > article > .sub-grid-4 > figure > a > img, 
+.three-img-grid > main > section > article > .sub-grid-5 > figure > a > img  {
+    width: 200px; height: 200px;
+    padding: 0% 0% 2% 0%;
+}
+
 /* <figcaption> */
-.four-img-grid > main > section > div > .sub-grid-2 > figure > .caption, 
-.four-img-grid > main > section > div > .sub-grid-3 > figure > .caption, 
-.four-img-grid > main > section > div > .sub-grid-4 > figure > .caption, 
-.four-img-grid > main > section > div > .sub-grid-5 > figure > .caption {
+.four-img-grid > main > section > article > .sub-grid-2 > figure > .caption, 
+.four-img-grid > main > section > article > .sub-grid-3 > figure > .caption, 
+.four-img-grid > main > section > article > .sub-grid-4 > figure > .caption, 
+.four-img-grid > main > section > article > .sub-grid-5 > figure > .caption,
+.three-img-grid > main > section > article > .sub-grid-2 > figure > .caption, 
+.three-img-grid > main > section > article > .sub-grid-3 > figure > .caption, 
+.three-img-grid > main > section > article > .sub-grid-4 > figure > .caption, 
+.three-img-grid > main > section > article > .sub-grid-5 > figure > .caption  {
     padding: 2% 3% 0px 3%;
-    font-size: 11px; text-align: left;
+    font-size: 11px; text-align: center;
     color: rgb(39, 39, 39);
 }
 
+/* Class to format the time duration of each activities */
 .time-period { text-align: left; color: rgb(39, 39, 39); font-size: 14px; font-weight: lighter;}
 
 /* ID spacing */
 #uwstemsub { padding: 1% 0 5% 0; }
+#content { height: 100%; }
+.full-screen { height: calc(100vh - 115px); background-color:white}
+
 
 /* Separating new material by white and gray background color */
 .white-bg { background-color: white}
