@@ -5,6 +5,9 @@
     This is the grids.css page for my portfolio of web development
     work. It is used by all pages in my portfolio to allow griding to evenly
     space content whenever I need it. 
+
+    Note: Some of my rule set have multiple rule set on one line
+        I spoke with Lauren about this and she said it was okay.
 */
 
 /* Grid for <section> */
@@ -27,8 +30,13 @@
 
 /* Formatting background color of specific pages */
 .home-page > main > .content-one,
-.contact-page > main > .content-one { background-color: rgba(255, 255, 255, 0); }
-.work-page > main > .content-one { background-color: rgb(133, 133, 133); }
+.contact-page > main > .content-one { 
+    background-color: rgba(255, 255, 255, 0); 
+}
+
+.work-page > main > .content-one { 
+    background-color: rgb(133, 133, 133); 
+}
 
 /* <section> to the left */
 main > .content-one{
@@ -47,7 +55,8 @@ main > .content-two{
 
 /* Achieve-page/Resume-page/Hobbies Content */
 .three-img-grid > main > section > .sub-grid-container {
-    position: relative; display: grid;
+    position: relative; 
+    display: grid;
     grid-template-columns: repeat(3, 33%);
     grid-template-rows: auto;
     grid-template-areas:
@@ -57,7 +66,8 @@ main > .content-two{
 
 /* Achieve-page/Resume-page/Hobbies Content */
 .four-img-grid > main > section > .sub-grid-container {
-    position: relative; display: grid;
+    position: relative; 
+    display: grid;
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: auto;
     grid-template-areas:
@@ -71,7 +81,9 @@ main > .content-two{
 .sub-grid-3 { grid-area: picture2; }
 .sub-grid-4 { grid-area: picture3; }
 .sub-grid-5 { grid-area: picture4; }
-.sub-grid-2, .sub-grid-3, .sub-grid-4, .sub-grid-5 { padding: 0px 0px 0px 0px; }
+.sub-grid-2, .sub-grid-3, .sub-grid-4, .sub-grid-5 { 
+    padding: 0px 0px 0px 0px; 
+}
 
 /* <figure> */
 .four-img-grid > main > section > article > .sub-grid-2 > figure > img, 
@@ -82,17 +94,22 @@ main > .content-two{
 .three-img-grid > main > section > article > .sub-grid-3 > figure > a > img, 
 .three-img-grid > main > section > article > .sub-grid-4 > figure > a > img, 
 .three-img-grid > main > section > article > .sub-grid-5 > figure > a > img  {
-    position: relative; display: block;
-    margin-left: auto; margin-right: auto;
-    width: 275px; height: 275px;
-    border: none; border-radius: 10%;
+    position: relative; 
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+    width: 275px; 
+    height: 275px;
+    border: none; 
+    border-radius: 10%;
 }
 
 .three-img-grid > main > section > article > .sub-grid-2 > figure > a > img, 
 .three-img-grid > main > section > article > .sub-grid-3 > figure > a > img, 
 .three-img-grid > main > section > article > .sub-grid-4 > figure > a > img, 
 .three-img-grid > main > section > article > .sub-grid-5 > figure > a > img  {
-    width: 200px; height: 200px;
+    width: 200px; 
+    height: 200px;
     padding: 0% 0% 2% 0%;
 }
 
@@ -106,19 +123,42 @@ main > .content-two{
 .three-img-grid > main > section > article > .sub-grid-4 > figure > .caption, 
 .three-img-grid > main > section > article > .sub-grid-5 > figure > .caption  {
     padding: 2% 3% 0px 3%;
-    font-size: 11px; text-align: center;
+    font-size: 11px; 
+    text-align: center;
     color: rgb(39, 39, 39);
 }
 
 /* Class to format the time duration of each activities */
-.time-period { text-align: left; color: rgb(39, 39, 39); font-size: 14px; font-weight: lighter;}
+.time-period { 
+    text-align: left; 
+    color: rgb(39, 39, 39); 
+    font-size: 14px; 
+    font-weight: lighter;
+}
 
 /* ID spacing */
-#uwstemsub { padding: 1% 0 5% 0; }
-#content { height: 100%; }
-.full-screen { height: calc(100vh - 115px); background-color:white}
+#uwstemsub { 
+    padding: 1% 0 5% 0; 
+}
+
+#content { 
+    height: 100%; 
+}
+
+.full-screen { 
+    height: calc(100vh - 115px); 
+    background-color:white;
+}
 
 /* Separating new material by white and gray background color */
-.white-bg { background-color: white}
-.light-gray-bg { background-color: rgb(224, 224, 224); }
-.light-gray-bg, .white-bg { padding: 2% 0 5% 0; }
+.white-bg { 
+    background-color: white
+}
+
+.light-gray-bg { 
+    background-color: rgb(224, 224, 224); 
+}
+
+.light-gray-bg, .white-bg { 
+    padding: 2% 0 5% 0; 
+}
