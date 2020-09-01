@@ -7,7 +7,6 @@
     space content whenever I need it. 
 */
 
-
 /* Grid for <section> */
 .grid-container {
     height: calc(100% - 100px); /* Subtract the 50px from header and footer */
@@ -74,7 +73,6 @@ main > .content-two{
 .sub-grid-5 { grid-area: picture4; }
 .sub-grid-2, .sub-grid-3, .sub-grid-4, .sub-grid-5 { padding: 0px 0px 0px 0px; }
 
-
 /* <figure> */
 .four-img-grid > main > section > article > .sub-grid-2 > figure > img, 
 .four-img-grid > main > section > article > .sub-grid-3 > figure > img, 
@@ -119,7 +117,6 @@ main > .content-two{
 #uwstemsub { padding: 1% 0 5% 0; }
 #content { height: 100%; }
 .full-screen { height: calc(100vh - 115px); background-color:white}
-
 
 /* Separating new material by white and gray background color */
 .white-bg { background-color: white}

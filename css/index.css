@@ -7,7 +7,6 @@
     a consistent look and feel. 
 */
 
-
 html, body {
     margin: 0; 
     /* height: 100%;  */
@@ -16,12 +15,8 @@ html, body {
 }
 
 /* background image of each page */
-.home-page { background: url(../pictures/Home_Page/background.jpeg) no-repeat center; background-size: cover; }
-.contact-page { background: url(../pictures/Contact_Page/background.jpeg) no-repeat center; background-size: cover; }
-/* .achieve-page { background: url(../pictures/Achieve_Page/background.jpeg) no-repeat center; background-size: cover; }
-.hobbies-page { background: url(../pictures/Hobbies_page/background.jpeg) no-repeat center; background-size: cover; }
-.work-page, .achieve-page, .hobbies-page, .contact-page { background-color: darksalmon; } */
-
+.home-page { background: url(../pictures/home_page/background.jpeg) no-repeat center; background-size: cover; }
+.contact-page { background: url(../pictures/contact_page/background.jpeg) no-repeat center; background-size: cover; }
 
 /* Header */
 header {
@@ -84,7 +79,6 @@ main > section > div > h1 {
 
 /* Section Content - Formmating */
 h2 { font-family: 'Andale Mono MT Std Regular', monospace; padding: 0% 5% 0% 5%; }
-
 h6 { text-align:center; color:rgba(0, 0, 0, 0.459) }
 
 /* Section Content - Formmating */
@@ -92,7 +86,6 @@ p { padding: 0% 5% 0% 5%; }
 
 /* Section Content - Formmating */
 ul { padding: 0% 5% 0% 10%; }
-
 li { padding: 0% 0% 1% 0%}
 
 /* Section Content - Formmating */
