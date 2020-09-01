@@ -5,23 +5,35 @@
     This is the index.css page for my portfolio of web development
     work. It is used by all pages in my portfolio to give the site
     a consistent look and feel. 
+
+    Note: Some of my rule set have multiple rule set on one line
+          I spoke with Lauren about this and she said it was okay.
 */
 
 html, body {
     margin: 0; 
     /* height: 100%;  */
-    background-color: rgba(245, 208, 106, 0.849); color: rgb(24, 24, 24);
+    background-color: rgba(245, 208, 106, 0.849); 
+    color: rgb(24, 24, 24);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /* background image of each page */
-.home-page { background: url(../pictures/home_page/background.jpeg) no-repeat center; background-size: cover; }
-.contact-page { background: url(../pictures/contact_page/background.jpeg) no-repeat center; background-size: cover; }
+.home-page { 
+    background: url(../pictures/home_page/background.jpeg) no-repeat center; 
+    background-size: cover; 
+}
+
+.contact-page { 
+    background: url(../pictures/contact_page/background.jpeg) no-repeat center; 
+    background-size: cover; 
+}
 
 /* Header */
 header {
     position: relative; 
-    display: block; overflow: hidden;
+    display: block; 
+    overflow: hidden;
     width: 1fr; height: 65px;
     /* background-color: rgb(245, 208, 106); */
     background-color: rgb(252, 231, 173);
@@ -29,98 +41,157 @@ header {
 
 /* Logo image */
 .logo {
-    position: relative; float: left;
-    top: 5px; left: 10px;
-    width: 55px; height:55px;
+    position: relative; 
+    float: left;
+    top: 5px; 
+    left: 10px;
+    width: 55px; 
+    height: 55px;
 }
 
 /* Navigation Bar */
-.navbar { position: relative; left: calc(40% - 55px); top:0; }
-#home { background-color: darksalmon; color: rgb(255, 255, 255);}
-#home:hover { background-color: rgb(218, 178, 164); }
+.navbar { 
+    position: relative; 
+    left: calc(40% - 55px); 
+    top: 0; 
+}
+
+#home { 
+    background-color: darksalmon; 
+    color: rgb(255, 255, 255);
+}
+
+#home:hover { 
+    background-color: rgb(218, 178, 164); 
+}
 
 /* <a> HTML element with the class 'active' has white bg */
-.navbar a.active { background-color: white; }
+.navbar a.active { 
+    background-color: white; 
+}
 
 /* Style navbar */
 .navbar > a {
-    top: 23px; position: relative;
-    text-align: center; text-decoration: none;
-    font-size: 15px; font-weight: bold;
-    color:  rgb(38, 40, 46); letter-spacing: 2px;
+    top: 23px; 
+    position: relative;
+    text-align: center; 
+    text-decoration: none;
+    font-size: 15px; 
+    font-weight: bold;
+    color: rgb(38, 40, 46); 
+    letter-spacing: 2px;
     padding: 25px calc(60%/24) 70px calc(60%/24);
 }
 
 /* Highlight the <a> link if hovered on */
-.navbar > a:hover { background-color: rgba(255, 255, 255, 0.60) }
+.navbar > a:hover { 
+    background-color: rgba(255, 255, 255, 0.60) 
+}
 
 /* Main */
-main { margin: 0 auto -50px; }
+main { 
+    margin: 0 auto -50px; 
+}
 
 /* Section Content - Formmating */
 main > section {
-    position: relative; display: inline-block;
-    height: 100%; min-height: 100%;
+    position: relative; 
+    display: inline-block;
+    height: 100%; 
+    min-height: 100%;
     background-color: white;
 }
 
 main > section > div > h1 {
-    position: relative; padding: 0% 10% 0% 10%;
+    position: relative; 
+    padding: 0% 10% 0% 10%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 30px; text-align: center; letter-spacing: 3px;
+    font-size: 30px; 
+    text-align: center; 
+    letter-spacing: 3px;
     color: rgb(255, 255, 255);
 }
 
 /* Custom for certain pages because of <section> to the right */
 .achieve-page > main > section> div > h1,
 .hobbies-page > main > section> div > h1 {
-    top: 250px; transform: rotate(90deg);
+    top: 250px; 
+    transform: rotate(90deg);
 }
 
 /* Section Content - Formmating */
-h2 { font-family: 'Andale Mono MT Std Regular', monospace; padding: 0% 5% 0% 5%; }
-h6 { text-align:center; color:rgba(0, 0, 0, 0.459) }
+h2 { 
+    font-family: 'Andale Mono MT Std Regular', monospace; 
+    padding: 0% 5% 0% 5%; 
+}
+
+h6 { 
+    text-align: center; 
+    color:rgba(0, 0, 0, 0.459) 
+}
 
 /* Section Content - Formmating */
-p { padding: 0% 5% 0% 5%; }
+p { 
+    padding: 0% 5% 0% 5%; 
+}
 
 /* Section Content - Formmating */
-ul { padding: 0% 5% 0% 10%; }
-li { padding: 0% 0% 1% 0%}
+ul { 
+    padding: 0% 5% 0% 10%; 
+}
+
+li { 
+    padding: 0% 0% 1% 0%
+}
 
 /* Section Content - Formmating */
 section > div > p {
-    top: calc((100% - 100px) - 50%); position: relative; 
+    top: calc((100% - 100px) - 50%); 
+    position: relative; 
     text-align: left;
 }
 
 /* pdf viewable size */
-.pdf{ height: 700px; padding: 5% 0 2% 0; }
+.pdf{ 
+    height: 700px; 
+    padding: 5% 0 2% 0; 
+}
 
 /* embed viewable size */
 section > div > embed {
-    position: relative; display: block;
-    left: 5%; width: 90%; height: 100%;
+    position: relative; 
+    display: block;
+    left: 5%; 
+    width: 90%; 
+    height: 100%;
 }
 
 /* Home-page Content */
 .home-page > main > section > div > img {
-    position: relative; left: 10%; 
-    width: 80%; height: 80%;
-    border: solid; border-color: lightyellow; 
+    position: relative; 
+    left: 10%; 
+    width: 80%; 
+    height: 80%;
+    border: solid; 
+    border-color: lightyellow; 
     border-top-right-radius: 10%;
 }
 
 /* I need to do this so the code doesn't over lap with the <a> in the navbar */
 .home-page > main > section > article > p > span > a { 
-    padding: 3px; text-decoration: none;
+    padding: 3px; 
+    text-decoration: none;
     background-color: rgb(245, 208, 106);
-    border: solid; border-color: rgb(245, 208, 106); 
-    border-width: 2px; border-radius: 10%;
+    border: solid; 
+    border-color: rgb(245, 208, 106); 
+    border-width: 2px; 
+    border-radius: 10%;
 }
 
 /* Hover for the link to Lois Lowry's offical page */
-.home-page > main > section > article > p > span > a:hover { background-color: rgb(255, 255, 255); }
+.home-page > main > section > article > p > span > a:hover { 
+    background-color: rgb(255, 255, 255); 
+}
 
 .contact-img { 
     padding: 3% 5% 3% 5%;
@@ -128,22 +199,30 @@ section > div > embed {
 
 .contact-img > a > img{ 
     padding: 0% 3% 0% 3%;
-    width: 75px; height: 75px;
+    width: 75px; 
+    height: 75px;
 }
 
 /* div breaker to let some padding between <section> and <footer> */
-.breaker { display: block; height: 50px; }
+.breaker { 
+    display: block; 
+    height: 50px; 
+}
 
 .tennis-ball { 
     position: relative;
-    top: 10px; right: 10px;
-    width:30px; height:30px; 
+    top: 10px; 
+    right: 10px;
+    width:30px; 
+    height:30px; 
 }
 
 /* Footer */
 footer {
-    position: absolute; overflow: hidden;
-    width: 100%; height: 50px; 
+    position: absolute; 
+    overflow: hidden;
+    width: 100%; 
+    height: 50px; 
     text-align: center;
     background-color: rgb(252, 231, 173);
 }
